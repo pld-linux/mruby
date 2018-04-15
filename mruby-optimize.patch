@@ -1,0 +1,11 @@
+--- mruby-1.4.0/lib/mruby/build.rb.orig	2018-01-16 02:15:19.000000000 +0100
++++ mruby-1.4.0/lib/mruby/build.rb	2018-04-15 09:02:38.913097060 +0200
+@@ -104,7 +104,7 @@
+       compilers.each do |c|
+         c.defines += %w(MRB_DEBUG)
+         if toolchains.any? { |toolchain| toolchain == "gcc" }
+-          c.flags += %w(-g3 -O0)
++          c.flags += %w(-g3)
+         end
+       end
+       @mrbc.compile_options += ' -g'
