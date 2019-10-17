@@ -2,7 +2,7 @@ Summary:	Lightweight implementation of the Ruby language
 Summary(pl.UTF-8):	Lekka implementacja języka Ruby
 Name:		mruby
 Version:	1.4.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 #Source0Download: https://github.com/mruby/mruby/releases
