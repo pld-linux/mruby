@@ -1,27 +1,27 @@
 Summary:	Lightweight implementation of the Ruby language
 Summary(pl.UTF-8):	Lekka implementacja języka Ruby
 Name:		mruby
-Version:	1.4.1
+Version:	2.1.2
 Release:	1
 License:	MIT
 Group:		Development/Languages
 #Source0Download: https://github.com/mruby/mruby/releases
 Source0:	https://github.com/mruby/mruby/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b40bf09af3f4c6e2bc443b9ac803a3ad
+# Source0-md5:	9d94e6de40a63992c143a3554bdaffd6
 # debian addon for man pages
-Source1:	http://http.debian.net/debian/pool/main/m/mruby/%{name}_1.4.0-1.debian.tar.xz
-# Source1-md5:	3e4d3b5aea4999b0c03e40b5202bf8be
+Source1:	http://http.debian.net/debian/pool/main/m/mruby/%{name}_%{version}-3.debian.tar.xz
+# Source1-md5:	2c4a8ced6d7d863e14d30a27e92188e0
 Patch0:		%{name}-optimize.patch
-URL:		http://www.mruby.org/
+URL:		https://mruby.org/
 BuildRequires:	bison
 BuildRequires:	ncurses-devel
 BuildRequires:	readline-devel
-BuildRequires:	ruby >= 1.8
+BuildRequires:	ruby >= 1:2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 mruby is the lightweight implementation of the Ruby language complying
-to (part of) the ISO standard. Its syntax is Ruby 1.9 compatible.
+to (part of) the ISO standard. Its syntax is Ruby 2.x compatible.
 
 This package contains:
 - mruby interpreter
@@ -30,7 +30,7 @@ This package contains:
 
 %description -l pl.UTF-8
 mruby to lekka implementacja języka Ruby, zgodna z (częścią) standardu
-ISO. Składnia jest zgodna z Rubym 1.9.
+ISO. Składnia jest zgodna z Rubym 2.x.
 
 Ten pakiet zawiera programy:
 - interpreter mruby
@@ -44,13 +44,13 @@ Group:		Development/Libraries
 
 %description devel
 mruby is the lightweight implementation of the Ruby language complying
-to (part of) the ISO standard. Its syntax is Ruby 1.9 compatible.
+to (part of) the ISO standard. Its syntax is Ruby 2.x compatible.
 
 This package contains embeddable library and its header files.
 
 %description devel -l pl.UTF-8
 mruby to lekka implementacja języka Ruby, zgodna z (częścią) standardu
-ISO. Składnia jest zgodna z Rubym 1.9.
+ISO. Składnia jest zgodna z Rubym 2.x.
 
 Ten pakiet zawiera osadzalną bibliotekę oraz jej pliki nagłówkowe.
 
@@ -81,7 +81,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS LEGAL MITL NEWS README.md TODO
+%doc AUTHORS LEGAL LICENSE NEWS README.md TODO
 %attr(755,root,root) %{_bindir}/mirb
 %attr(755,root,root) %{_bindir}/mrbc
 %attr(755,root,root) %{_bindir}/mrdb
