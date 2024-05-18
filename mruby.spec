@@ -1,15 +1,15 @@
 Summary:	Lightweight implementation of the Ruby language
 Summary(pl.UTF-8):	Lekka implementacja języka Ruby
 Name:		mruby
-Version:	1.4.0
-Release:	2
+Version:	1.4.1
+Release:	1
 License:	MIT
 Group:		Development/Languages
 #Source0Download: https://github.com/mruby/mruby/releases
 Source0:	https://github.com/mruby/mruby/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	25efc35511070454074b36863c4d5b5e
+# Source0-md5:	b40bf09af3f4c6e2bc443b9ac803a3ad
 # debian addon for man pages
-Source1:	http://http.debian.net/debian/pool/main/m/mruby/%{name}_%{version}-1.debian.tar.xz
+Source1:	http://http.debian.net/debian/pool/main/m/mruby/%{name}_1.4.0-1.debian.tar.xz
 # Source1-md5:	3e4d3b5aea4999b0c03e40b5202bf8be
 Patch0:		%{name}-optimize.patch
 URL:		http://www.mruby.org/
