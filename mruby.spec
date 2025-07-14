@@ -56,7 +56,7 @@ Ten pakiet zawiera osadzalną bibliotekę oraz jej pliki nagłówkowe.
 
 %prep
 %setup -q -a1
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 CC="%{__cc}" \
